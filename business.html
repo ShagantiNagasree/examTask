@@ -1,0 +1,237 @@
+<html>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+          }
+          
+          .navbar {
+            overflow: hidden;
+            background-color: #333; 
+          }
+          
+          .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          .subnav {
+            float: left;
+            overflow: hidden;
+          }
+          
+          .subnav .subnavbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+          }
+          
+          .navbar a:hover, .subnav:hover .subnavbtn {
+            background-color: red;
+          }
+          
+          .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: red;
+            width: 100%;
+            z-index: 1;
+          }
+          
+          .subnav-content a {
+            float: left;
+            color: white;
+            text-decoration: none;
+          }
+          
+          .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+          }
+          
+          .subnav:hover .subnav-content {
+            display: block;
+          }
+       span{
+          
+           padding: 50px;
+           font-size: 25px;
+            }
+        a{
+            color:white;
+            text-align-last: right;
+            padding-left: 40px;
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+        }
+        button:hover{
+            background-color:yellow;
+            color:red;
+        }
+        nav{
+            display: inline;
+            margin-left: 900px;
+            font-size: 22px;
+           
+        }
+        .content {
+            position: relative;
+          }
+          
+          /* Bottom right text */
+          .text-block {
+            position: absolute;
+            top:38%;
+            left:35%;
+            width: 400px;
+            height:180px;
+            background-color: black;
+            opacity: 0.5;
+            
+            border: 2px solid black;
+            color: white;
+            padding-left: 20px;
+            text-align: center;
+            padding-top: 20px;
+            
+           
+          }
+          button{
+            background-color: orangered;
+            padding: 10px;
+            color:white;
+            border: orangered;
+            border-radius: 2px;
+            width: 105px;
+            
+          }
+          .image{
+            width: 300px;
+            height: 250px;
+           background-color:whitesmoke;
+           border:2px solid rgb(159, 151, 151);
+           border-radius: 3px;
+           margin-left:5px;
+            
+            text-align: center;
+            color:black;
+            float:left;
+            filter:drop-shadow(3px 3px 6px #555);
+            
+            align-items: center;
+            
+          }
+          .images{
+            width:1000px;
+            height:300px;
+            margin-left:300px ;
+            margin-top:5px;
+
+          }
+          .images::after{
+            content:"";
+            display:table;
+            clear:both;
+           
+          }
+          .footer{
+            background-color: black;
+            height: 60px;
+            text-align: center;
+            color:white;
+            padding-top:10px;
+
+          }
+         
+    </style>
+    <head>
+        <title>E-Commerce</title>
+    </head>
+    <body>
+    </head>
+    <body>
+    
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="#company">Company</a>
+          <a href="#team">Team</a>
+          <a href="#careers">Careers</a>
+        </div>
+      </div> 
+      <div class="subnav">
+        <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="#bring">Bring</a>
+          <a href="#deliver">Deliver</a>
+          <a href="#package">Package</a>
+          <a href="#express">Express</a>
+        </div>
+      </div> 
+      <div class="subnav">
+      <a href="#contact">Contact</a>
+      <div class="subnav-content">
+        <a href="#">email</a>
+        <a href="#">phone</a>
+        <a href="#">address</a>
+       
+      </div>
+</div>
+   
+    
+   
+      </div>
+      
+
+      <div class="content">
+        <marquee><h1 >STUDENTS: THE FUTURE SOILDERS FOR TECHNOLOGY</h1></marquee>
+        <img src="back.jpg" alt="image" style="width:100%;" height="550px">
+        <div class="text-block">
+         <h1>  YOU CAN LEARN WHAT YOU WANT.</h1>
+          <p>Students can learn practically</p>
+          <button>Register now</button>
+        </div>
+      </div>
+      <div class="images">
+      <div class="image">
+        <img src="mahs.jpg" alt="camera" width="290px" height="160px">
+        <h3>Mathematics</h3>
+        <p>Mathematics</p>
+      </div>
+      <div class="image">
+        <img src="elec.jpg" alt="watch" widht="290px" height="160px">
+        <h3>ELECTRICS</h3>
+        <p>Circuit designing</p>
+      </div>
+      <div class="image">
+        <img src="al.png" alt="shirt" widht="290px" height="160px">
+        <h3><b>AI ML</b></h3>
+        <p>artificial intelligence</p>
+      </div>
+
+      </div>
+      <div class="footer">
+        <p>
+            Copyright &copy; Lifestyle Store. All Rights Reserved | contact Us : +91 90000 00000
+        </p>
+
+      </div>
+
+
+        
+    </body>
+</html>
